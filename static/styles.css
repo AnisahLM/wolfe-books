@@ -1,0 +1,356 @@
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+}
+
+body {
+  font-family: optima;
+  background-color: white;
+}
+
+pre {
+  font-family: inherit;
+  font-style: italic;
+}
+
+.hero-background {
+  background-color: #F8F8F8;
+  display: flex;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-page-text {
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.footer {
+  flex-shrink: 0;
+  padding: 20px;
+  background-color: #F8F8F8;
+  color: black;
+  text-align: left;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: auto;
+}
+
+.checkout_form {
+  border: 1px solid black;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+.address_form {
+  width: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin-top: 1rem;
+}
+
+.books_forms_div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.genre_search_forms {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.books_page_form {
+  margin-left: 3rem;
+  width: 8rem;
+  border-radius: 2px;
+}
+
+.add_book_button {
+  flex-wrap: wrap;
+  align-self: center;
+  margin-right: 8rem;
+  width: 8rem;
+  border-radius: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+#edit_book {
+  margin-right: 2rem;
+}
+
+input {
+  width:8rem;
+  border-radius: 2px;
+}
+
+button {
+  width: 12rem;
+  padding: .5rem;
+  border-radius: 2px;
+  background-color: white;
+  font-family: optima;
+}
+
+button:hover {
+  background-color: B0C4DE;
+  transition: 0.7s;
+}
+
+button:disabled {
+  opacity: .9;
+  cursor: default;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.nav-links:hover {
+  color: orange;
+}
+
+.nav-links > a:hover {
+  color: orange;
+}
+
+.books_page_img {
+  width:200px; 
+  height: auto;
+}
+
+select {
+  border-radius: 2px;
+  width: 8rem;
+}
+
+.books_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.book_card {
+  max-width: 12rem;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.book_info {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.book_page_img {
+  width:400px; 
+  height: auto;
+  margin-right: 4rem;
+}
+
+.book_text {
+  text-align: justify;
+  font-size: 20px;
+}
+/* edit review modal */
+.edit-review {
+  padding: 1em;
+  border: 2px solid rgb(132, 132, 132);
+}
+
+.arrow {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
+  margin-bottom: 2%
+}
+
+.book_reviews {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.book_recs {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.book_rec_info {
+  max-width: 20rem;
+}
+
+button .react-multiple-carousel__arrow, .react-multiple-carousel__arrow--left, .react-multiple-carousel__arrow--right {
+  width: 2em;
+}
+
+.cart-book-img {
+  max-width: 5rem;
+}
+
+hr {
+  color: rgb(255, 255, 255);
+}
+
+input[type='radio']{
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.stars {
+  display: flex;
+}
+
+a {
+  display: flex;
+  align-items: center;
+}
+
+#buttons {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  gap: .2em;
+}
+
+#cart_page_content {
+  display: flex;
+}
+
+#checkout_page {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#checkout_buttons {
+  display: flex;
+}
+
+#edit_quantity_button {
+  margin-right: 5rem;
+}
+
+#checkout_info {
+  display: flex;
+  flex-direction: row;
+}
+
+#checkout_text {
+  text-align: justify;
+}
+
+#checkout_page_img {
+  max-width: 5rem;
+  height: auto;
+  margin-right: 4rem;
+  margin-bottom: 1rem;
+}
+
+#edit_book_page {
+  margin-bottom: 2rem;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Will change these ids to one class if no other CSS is applied to the individual pages */
+#account_page, #edit_account_page, #add_book_page, #users_page, #create_user_page, #login_page, #cart_page {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#delete_user_button {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+#update_book_button {
+  margin-top: 2rem;
+}
+
+#create_account_button {
+  margin-top: 1rem;
+}
+
+#cart-actions {
+  display: flex;
+  flex-direction: column;
+}
+
+.buy_btn, .checkout_btn {
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+#cart-book-list {
+  margin-right: 12rem;
+}
+
+#order_success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#order_success img {
+  max-width: 50rem;
+  margin: 1rem;
+  border: 5px solid purple;
+  border-radius: 5%;
+}
+
+#view_orders_btn {
+  margin: 2rem;
+}
+
+#past_orders_div {
+  margin-top: 2rem;
+}
