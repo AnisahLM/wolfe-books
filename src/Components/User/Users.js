@@ -16,6 +16,7 @@ const Users = () => {
       const admins = users.filter((user) => user.isAdmin === true);
       if (admins.length < 2) {
         alert('Please create another admin before deleting your account.');
+        return;
       }
     }
     if (confirm('Are you sure you want to delete your account?')) {
@@ -24,7 +25,7 @@ const Users = () => {
   };
 
   return (
-    <div id='account_page' style={{ height: '80vh' }}>
+    <div id="account_page" style={{ height: '80vh' }}>
       <h1>Account Information</h1>
       <p>
         <strong>Username:</strong> {auth.username}
@@ -35,7 +36,9 @@ const Users = () => {
       <p>
         <strong>Email:</strong> {auth.email}
       </p>
-      <h3><Link to={`/users/${auth.id}/edit`}>Edit Account Info</Link></h3>
+      <h3>
+        <Link to={`/users/${auth.id}/edit`}>Edit Account Info</Link>
+      </h3>
       <br></br>
       <button onClick={() => deleteAccount()}>Delete Account</button>
     </div>
